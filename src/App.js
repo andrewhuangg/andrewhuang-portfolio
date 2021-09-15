@@ -1,8 +1,15 @@
-import React from 'react';
 import './assets/styles/style.scss';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Home from './components/Home';
 
-function App() {
-  return <div className='App'>Hello World</div>;
-}
+const App = () => {
+  return (
+    <div className='app'>
+      <Sidebar />
+      <Home />
+    </div>
+  );
+};
 
 export default App;
