@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Sidebar = () => {
+const Sidebar = ({ isToggled }) => {
   return (
-    <div clasName='sidebar'>
-      <div className='sidebar__menu'>
+    <div className='sidebar'>
+      <div className={`sidebar__menu ${isToggled && 'sidebar__menu--active'}`}>
         <ul className='sidebar__ul'>
           <li className='sidebar__li'>
             <a href='#'>Home</a>

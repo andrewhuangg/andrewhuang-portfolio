@@ -2,10 +2,10 @@ import React from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 
-const Home = () => {
+const Home = ({ isToggled, setIsToggled }) => {
   return (
-    <div className='home'>
-      <Navbar />
+    <div className={`home ${isToggled && 'home--active'}`}>
+      <Navbar isToggled={isToggled} setIsToggled={setIsToggled} />
       <Hero />
     </div>
   );

@@ -1,31 +1,112 @@
 .hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
   &__pllx {
-  }
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-  &__pllx-img1 {
-  }
+    &-img1 {
+      background-image: url('../images/imgPar1.png');
+      z-index: 1;
+    }
 
-  &__pllx-img2 {
-  }
+    &-img2 {
+      background-image: url('../images/imgPar2.png');
+      z-index: 2;
+    }
 
-  &__pllx-img3 {
-  }
+    &-img3 {
+      background-image: url('../images/imgPar3.png');
+      z-index: 3;
+    }
 
-  &__pllx-img4 {
+    &-img4 {
+      background-image: url('../images/imgPar4.png');
+      z-index: 3;
+    }
   }
 
   &__about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; // *
+    color: $fontLight;
+
+    h3,
+    p {
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      top: 30%;
+      z-index: 1;
+      font-size: 5rem;
+      letter-spacing: 2px;
+    }
+
+    p {
+      top: 45%;
+      z-index: 2;
+      font-size: 2.75rem;
+    }
+
+    a {
+      font-size: $fontSm;
+    }
   }
 
   &__content {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__img-container {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
   }
 
   &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
   }
 
   &__cta {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: $buttonLight;
+    border-radius: 16px;
+    color: $fontLight;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
 }

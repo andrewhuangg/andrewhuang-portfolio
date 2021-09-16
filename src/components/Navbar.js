@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ isToggled, setIsToggled }) => {
+  const handleToggle = (e) => {
+    e.preventDefault();
+    setIsToggled((prevToggle) => !prevToggle);
+  };
+
   return (
-    <div className='navbar'>
+    <div className={`navbar ${isToggled && 'navbar--active'}`}>
       <a href='#' className='navbar__logo'>
-        Portfolio
+        Andrew Huang
       </a>
-      <div className='navbar__toggle'>
-        <i class='fas fa-bars' />
+      <div
+        className={`navbar__toggle ${isToggled && 'navbar__toggle--active'}`}
+        onClick={(e) => handleToggle(e)}
+      >
+        <i className='fas fa-bars' />
       </div>
     </div>
   );
