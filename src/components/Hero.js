@@ -1,26 +1,31 @@
 import React from 'react';
 import HeadShot from '../assets/images/headshot.jpg';
+import Parallax from 'react-rellax';
 
 const Hero = () => {
   return (
     <>
       <div className='hero'>
-        <div className='hero__pllx hero__pllx-img1'></div>
-        <div className='hero__pllx hero__pllx-img2'></div>
-        <div className='hero__pllx hero__pllx-img3'></div>
-        <div className='hero__pllx hero__pllx-img4'></div>
+        <Parallax centered speed={-9} className='hero__pllx hero__pllx-img1' />
+        <Parallax centered speed={-7} className='hero__pllx hero__pllx-img2' />
+        <Parallax centered speed={-6} className='hero__pllx hero__pllx-img3' />
+        <Parallax centered speed={-3} className='hero__pllx hero__pllx-img4' />
 
         <section className='hero__about'>
           <div className='hero__content'>
-            <div className='hero__img-container'>
+            <Parallax centered speed={-6} className='hero__img-container'>
               <img src={HeadShot} className='hero__img' draggable='false' />
-            </div>
-            <h3>Andrew Huang</h3>
-            <p>Software Developer</p>
+            </Parallax>
+            <Parallax centered speed={-6} className='hero__title'>
+              <h3>Andrew Huang</h3>
+            </Parallax>
+            <Parallax centered speed={-5} className='hero__subtitle'>
+              <p>Software Developer</p>
+            </Parallax>
             {/* Attach Link to Resume */}
-            <a href='#' className='hero__cta'>
-              Download My Resume!
-            </a>
+            <Parallax centered speed={-5} className='hero__cta'>
+              <a href='#'>Download My Resume!</a>
+            </Parallax>
           </div>
         </section>
       </div>
