@@ -6,22 +6,22 @@ const Sidebar = ({ isToggled }) => {
       <div className={`sidebar__menu ${isToggled && 'sidebar__menu--active'}`}>
         <ul className='sidebar__ul'>
           <li className='sidebar__li'>
-            <a href='#'>Home</a>
+            <a href='#home'>Home</a>
           </li>
           <li className='sidebar__li'>
-            <a href='#'>About</a>
+            <a href='#about'>About</a>
           </li>
           <li className='sidebar__li'>
-            <a href='#'>Projects</a>
+            <a href='#projects'>Projects</a>
           </li>
           <li className='sidebar__li'>
-            <a href='#'>Technologies</a>
+            <a href='#technologies'>Technologies</a>
           </li>
           <li className='sidebar__li'>
-            <a href='#'>Social</a>
+            <a href='#social'>Social</a>
           </li>
           <li className='sidebar__li'>
-            <a href='#'>Contact</a>
+            <a href='#contact'>Contact</a>
           </li>
         </ul>
       </div>

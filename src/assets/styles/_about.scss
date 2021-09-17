@@ -1,0 +1,29 @@
+.about {
+  min-height: 100vh;
+  position: relative;
+  padding: 0 40px;
+  padding-top: 80px;
+  background-color: $secondaryLight;
+
+  &__title {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 30px;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: $fontLg;
+    }
+  }
+
+  &__content {
+  }
+
+  &__text {
+  }
+
+  &__img-container {
+  }
+}

@@ -14,7 +14,7 @@ const Navbar = ({ isToggled, setIsToggled }) => {
         duration={1.5}
         ease='expo.out'
       >
-        <a href='#' className='navbar__logo'>
+        <a href='#home' className='navbar__logo'>
           Andrew Huang
         </a>
       </Tween>
