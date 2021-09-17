@@ -56,14 +56,14 @@
   }
 
   &__title {
-    top: 45%;
+    top: 42%;
     z-index: 1;
     font-size: 2rem;
     letter-spacing: 2px;
   }
 
   &__subtitle {
-    top: 52%;
+    top: 50%;
     font-size: 1.5rem;
     z-index: 2;
   }
@@ -77,13 +77,13 @@
   }
 
   &__img-container {
-    width: 200px;
-    height: 200px;
-    top: 20%;
+    width: 175px;
+    height: 175px;
+    top: 17%;
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
-    z-index: 2;
+    z-index: 1;
   }
 
   &__img {
@@ -98,19 +98,19 @@
 
   &__cta {
     margin-top: 10px;
-    padding: 10px 15px;
-    top: 60%;
+    top: 55%;
     position: absolute;
     display: inline-block;
-    background-color: $buttonLight;
-    border-radius: 16px;
     font-weight: 400;
     font-size: $fontSm;
     letter-spacing: 1px;
     z-index: 3;
 
     a {
+      padding: 10px 15px;
       color: $mainLight;
+      background-color: $buttonLight;
+      border-radius: 16px;
     }
   }
 }
