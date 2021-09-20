@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section className='projects adjust' id='projects'>
       <div className='projects__title title'>
-        <h2>Project One</h2>
+        <h2>Recent Projects</h2>
         <p>
           About the project - - -Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -14,6 +14,40 @@ const Projects = () => {
           release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
           publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
+      </div>
+      <div className='projects__content'>
+        <div className='projects__proj-container'>
+          <div className='projects__img-container'>
+            <img src='https://media.giphy.com/media/lIIcOKSqXEUTbywgmK/giphy.gif' />
+          </div>
+          <div className='projects__text'>
+            <h3>Project 01</h3>
+          </div>
+        </div>
+        <div className='projects__proj-container'>
+          <div className='projects__img-container'>
+            <img src='https://media.giphy.com/media/lIIcOKSqXEUTbywgmK/giphy.gif' />
+          </div>
+          <div className='projects__text'>
+            <h3>Project 01</h3>
+          </div>
+        </div>
+        <div className='projects__proj-container'>
+          <div className='projects__img-container'>
+            <img src='https://media.giphy.com/media/lIIcOKSqXEUTbywgmK/giphy.gif' />
+          </div>
+          <div className='projects__text'>
+            <h3>Project 01</h3>
+          </div>
+        </div>
+        <div className='projects__proj-container'>
+          <div className='projects__img-container'>
+            <img src='https://media.giphy.com/media/cmaFn8WxU0jTFbeuEz/giphy.gif' />
+          </div>
+          <div className='projects__text'>
+            <h3>Project 01</h3>
+          </div>
+        </div>
       </div>
     </section>
   );

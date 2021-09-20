@@ -29,10 +29,9 @@
     width: 100%;
 
     a {
-      position: relative;
-      display: block;
-      width: 100%;
       margin: 10px 0;
+      position: relative;
+      display: inline-block;
       white-space: normal;
       text-transform: uppercase;
       color: $fontHeadinglight;
@@ -40,8 +39,21 @@
       letter-spacing: 2px;
       opacity: 0.75;
 
+      &::after {
+        width: 0;
+        height: 2px;
+        content: '';
+        display: block;
+        background-color: $buttonLight;
+        transition: width 200ms ease-in-out;
+      }
+
       &:hover {
         opacity: 1;
+      }
+
+      &:hover::after {
+        width: 100%;
       }
     }
   }
