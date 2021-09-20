@@ -37,3 +37,39 @@ li {
   margin: 0;
   list-style: none;
 }
+
+.adjust {
+  min-height: 100vh;
+  display: inline-block;
+  position: relative;
+  padding: 0 40px;
+  padding-top: 80px;
+  background-color: $secondaryLight;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: $fontLg;
+  }
+
+  h2::after {
+    width: 0;
+    height: 2px;
+    content: '';
+    display: block;
+    background-color: $buttonLight;
+    transition: width 200ms ease-in-out;
+  }
+
+  h2:hover::after {
+    width: 100%;
+  }
+}

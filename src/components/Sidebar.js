@@ -12,10 +12,10 @@ const Sidebar = ({ isToggled }) => {
             <a href='#about'>About</a>
           </li>
           <li className='sidebar__li'>
-            <a href='#projects'>Projects</a>
+            <a href='#technologies'>Technologies</a>
           </li>
           <li className='sidebar__li'>
-            <a href='#technologies'>Technologies</a>
+            <a href='#projects'>Projects</a>
           </li>
           <li className='sidebar__li'>
             <a href='#social'>Social</a>

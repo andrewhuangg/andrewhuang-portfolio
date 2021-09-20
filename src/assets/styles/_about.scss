@@ -1,29 +1,20 @@
 .about {
-  min-height: 100vh;
-  position: relative;
-  padding: 0 40px;
-  padding-top: 80px;
-  background-color: $secondaryLight;
-
-  &__title {
-    width: 100%;
-    text-align: center;
-
-    h2 {
-      margin-bottom: 30px;
-      position: relative;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: $fontLg;
-    }
-  }
-
   &__content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__text {
+    width: 49%;
+    min-width: 49%;
   }
 
   &__img-container {
+    margin-left: 40px;
+  }
+
+  &__img {
+    max-width: 100%;
   }
 }
