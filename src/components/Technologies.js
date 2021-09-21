@@ -59,7 +59,7 @@ const Technologies = () => {
         </div>
         <div className='technologies__tech-container'>
           <img src={NasaLogo} alt='react-logo' />
-          <h2>NasaApi</h2>
+          <h2>Nasa Api</h2>
           <p>
             It is a long established fact that a reader will be distracted by the readable content
             of a page when looking at its layout.{' '}

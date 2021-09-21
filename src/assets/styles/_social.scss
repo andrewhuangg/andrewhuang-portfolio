@@ -1,0 +1,69 @@
+.social {
+  &__title {
+  }
+
+  &__content {
+    margin: 40px 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &__social-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    background-color: $blockLight;
+    border: 1px solid rgba(187, 191, 202, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      padding-right: 10px;
+      position: relative;
+      display: inline-block;
+      color: $fontLight;
+      font-size: $fontLg;
+      font-weight: 600;
+      line-height: 1.2em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-right: 4px solid $buttonLight;
+      transition: border-right 100ms ease-in-out;
+    }
+
+    h4:hover {
+      border-right: 0px solid $buttonLight;
+    }
+
+    h4::after {
+      width: 0;
+      height: 2px;
+      content: '';
+      display: block;
+      background-color: $buttonLight;
+      transition: width 200ms ease-in-out;
+    }
+
+    h4:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__icon-container {
+    margin-right: 16px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

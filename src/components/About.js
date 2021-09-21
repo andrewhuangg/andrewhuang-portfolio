@@ -1,9 +1,11 @@
-import React from 'react';
-import Parallax from 'react-rellax';
-import { Tween } from 'react-gsap';
+import React, { useEffect, useRef } from 'react';
+import { ScrollTrigger } from 'react-gsap';
+import { gsap } from 'gsap';
 import AboutPhoto from '../assets/images/about-photo.jpg';
 
 const About = () => {
+  const ref = useRef();
+
   return (
     <section className='about adjust' id='about'>
       <div className='about__title title'>

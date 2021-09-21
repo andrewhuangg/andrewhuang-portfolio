@@ -35,7 +35,7 @@
       top: 0;
       left: 0;
       position: absolute;
-      object-fit: cover;
+      object-fit: scale-down;
     }
   }
 
@@ -55,7 +55,7 @@
 
     h3 {
       color: $fontLight;
-      font-size: $fontLg;
+      font-size: $fontMd;
     }
   }
 }
