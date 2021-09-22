@@ -21,7 +21,7 @@ const Projects = () => {
             <img src='https://media.giphy.com/media/lIIcOKSqXEUTbywgmK/giphy.gif' />
           </div>
           <div className='projects__text'>
-            <h3>journii - Community Blog And Journal</h3>
+            <h3>journii</h3>
           </div>
         </div>
         <div className='projects__proj-container'>
@@ -29,7 +29,7 @@ const Projects = () => {
             <img src='https://media.giphy.com/media/KrOIq8SvE2bE6CynVk/giphy.gif' />
           </div>
           <div className='projects__text'>
-            <h3>my_eonet - Nasa Earth Observatory Natural Event Tracker</h3>
+            <h3>my_eonet</h3>
           </div>
         </div>
         <div className='projects__proj-container'>
@@ -37,7 +37,7 @@ const Projects = () => {
             <img src='https://media.giphy.com/media/gU8CUCWHgrwG6OuUyu/giphy.gif' />
           </div>
           <div className='projects__text'>
-            <h3>dmme - Live Chat Application</h3>
+            <h3>dmme</h3>
           </div>
         </div>
         <div className='projects__proj-container'>
@@ -45,7 +45,7 @@ const Projects = () => {
             <img src='https://media.giphy.com/media/cmaFn8WxU0jTFbeuEz/giphy.gif' />
           </div>
           <div className='projects__text'>
-            <h3>CampThrill - Hipcamp clone</h3>
+            <h3>CampThrill</h3>
           </div>
         </div>
       </div>

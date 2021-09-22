@@ -1,11 +1,13 @@
 .social {
+  min-height: 40vh;
+
   &__title {
   }
 
   &__content {
-    margin: 40px 250px;
+    margin: 40px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 

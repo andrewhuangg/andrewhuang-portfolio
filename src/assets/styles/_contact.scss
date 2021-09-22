@@ -1,0 +1,87 @@
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+
+  &__title {
+  }
+
+  &__form {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+  }
+
+  &__form-group {
+    &.group1 {
+      width: 100%;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: $fontLight;
+        background-color: $blockLight;
+        font-size: $fontMd;
+        border: 1px solid rgba(187, 191, 202, 0.05);
+
+        &::placeholder {
+          color: $fontHeadinglight;
+        }
+      }
+    }
+
+    &.group2 {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: $fontLight;
+        background-color: $blockLight;
+        font-size: $fontMd;
+        border: 1px solid rgba(187, 191, 202, 0.05);
+        resize: none;
+        height: 200px;
+
+        &::placeholder {
+          color: $fontHeadinglight;
+        }
+      }
+
+      input {
+        max-width: 150px;
+        padding: 10px 30px;
+        display: inline-block;
+        color: $mainLight;
+        background-color: $buttonLight;
+        font-size: $fontLg;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
