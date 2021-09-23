@@ -11,6 +11,10 @@
     overflow: hidden;
     transition: width 200ms ease-in-out;
 
+    @include breakpoint-down(small) {
+      left: -100%;
+    }
+
     &--active {
       width: 225px;
     }

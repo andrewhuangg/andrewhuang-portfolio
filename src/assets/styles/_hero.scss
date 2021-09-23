@@ -60,12 +60,20 @@
     z-index: 1;
     font-size: 2rem;
     letter-spacing: 2px;
+
+    @include breakpoint-down(small) {
+      top: 43%;
+    }
   }
 
   &__subtitle {
     top: 50%;
     font-size: 1.5rem;
     z-index: 2;
+
+    @include breakpoint-down(small) {
+      top: 50%;
+    }
   }
 
   &__content {
@@ -84,6 +92,15 @@
     border-radius: 50%;
     overflow: hidden;
     z-index: 1;
+
+    @include breakpoint-down(small) {
+      top: 20%;
+    }
+
+    @include breakpoint-down(medium) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &__img {
@@ -105,6 +122,10 @@
     font-size: $fontSm;
     letter-spacing: 1px;
     z-index: 3;
+
+    @include breakpoint-down(small) {
+      top: 80%;
+    }
 
     a {
       padding: 10px 15px;
