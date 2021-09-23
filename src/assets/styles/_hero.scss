@@ -1,11 +1,15 @@
 .hero {
-  height: 100vh;
+  height: 720px;
   position: relative;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  @include breakpoint-down(small) {
+    height: 620px;
+  }
 
   &__pllx {
     width: 100%;
@@ -14,6 +18,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include breakpoint-down(smedium) {
+      height: 125%;
+    }
 
     &-img1 {
       background-image: url('../images/imgPar1.png');
@@ -38,7 +46,7 @@
 
   &__about {
     width: 100%;
-    min-height: 100vh;
+    height: 720px;
     padding: 0 20px;
     position: relative;
     display: flex;
@@ -56,23 +64,25 @@
   }
 
   &__title {
-    top: 42%;
+    top: 43%;
     z-index: 1;
     font-size: 2rem;
     letter-spacing: 2px;
 
     @include breakpoint-down(small) {
-      top: 43%;
+      font-size: 1.5rem;
+      top: 47%;
     }
   }
 
   &__subtitle {
-    top: 50%;
+    top: 51%;
     font-size: 1.5rem;
     z-index: 2;
 
     @include breakpoint-down(small) {
-      top: 50%;
+      font-size: 1rem;
+      top: 54%;
     }
   }
 
@@ -87,20 +97,11 @@
   &__img-container {
     width: 175px;
     height: 175px;
-    top: 17%;
+    top: 18%;
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
     z-index: 1;
-
-    @include breakpoint-down(small) {
-      top: 20%;
-    }
-
-    @include breakpoint-down(medium) {
-      width: 200px;
-      height: 200px;
-    }
   }
 
   &__img {
@@ -115,7 +116,7 @@
 
   &__cta {
     margin-top: 10px;
-    top: 55%;
+    top: 80%;
     position: absolute;
     display: inline-block;
     font-weight: 400;
@@ -124,7 +125,7 @@
     z-index: 3;
 
     @include breakpoint-down(small) {
-      top: 80%;
+      font-size: 0.75rem;
     }
 
     a {
@@ -132,6 +133,10 @@
       color: $mainLight;
       background-color: $buttonLight;
       border-radius: 16px;
+
+      @include breakpoint-down(small) {
+        padding: 7px 10px;
+      }
     }
   }
 }
