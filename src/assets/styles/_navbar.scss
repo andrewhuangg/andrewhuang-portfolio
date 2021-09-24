@@ -16,6 +16,12 @@
   &--active {
     width: calc(100% - 225px); // * Calculating sidebar width
     left: 225px;
+
+    @include breakpoint-down(smedium) {
+      width: calc(100% - 300px);
+      left: 300px;
+      position: relative;
+    }
   }
 
   &__logo {
