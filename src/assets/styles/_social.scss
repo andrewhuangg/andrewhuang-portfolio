@@ -1,6 +1,4 @@
 .social {
-  min-height: 40vh;
-
   &__title {
   }
 
@@ -9,6 +7,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @include breakpoint-down(smedium) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include breakpoint-down(small) {
+      margin: 0;
+    }
   }
 
   &__social-container {

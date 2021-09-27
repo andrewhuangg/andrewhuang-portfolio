@@ -1,19 +1,11 @@
 import React from 'react';
 
-const Projects = () => {
+const Projects = ({ refProp }) => {
   return (
-    <section className='projects adjust' id='projects'>
+    <section className='projects adjust' id='projects' ref={refProp}>
       <div className='projects__title title'>
         <h2>Recent Projects</h2>
-        <p>
-          About the project - - -Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </div>
       <div className='projects__content'>
         <div className='projects__proj-container'>

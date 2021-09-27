@@ -41,7 +41,6 @@ li {
 }
 
 .adjust {
-  min-height: 100vh;
   width: 100%;
   display: inline-block;
   position: relative;
@@ -62,6 +61,15 @@ li {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: $fontLg;
+
+    @include breakpoint-down(large) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint-down(smedium) {
+      margin-bottom: 0;
+      font-size: 2rem;
+    }
   }
 
   h2::after {

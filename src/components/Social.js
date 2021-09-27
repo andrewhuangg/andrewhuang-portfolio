@@ -3,15 +3,11 @@ import GithubLogo from '../assets/images/github-logo.png';
 import GmailLogo from '../assets/images/gmail-logo.png';
 import LinkedinLogo from '../assets/images/linkedin-logo.png';
 
-const Social = () => {
+const Social = ({ refProp }) => {
   return (
-    <section className='social adjust' id='social'>
+    <section className='social adjust' id='social' ref={refProp}>
       <div className='social__title title'>
         <h2>Social</h2>
-        <p>
-          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
       </div>
       <div className='social__content'>
         <div className='social__social-container'>

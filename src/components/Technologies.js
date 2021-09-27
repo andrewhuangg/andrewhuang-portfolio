@@ -6,9 +6,9 @@ import ReactLogo from '../assets/images/react-logo.png';
 import S3Logo from '../assets/images/s3-logo.png';
 import SendgridLogo from '../assets/images/sendgrid-logo.png';
 
-const Technologies = () => {
+const Technologies = ({ refProp }) => {
   return (
-    <section className='technologies adjust' id='technologies'>
+    <section className='technologies adjust' id='technologies' ref={refProp}>
       <div className='technologies__title title'>
         <h2>Some Familiar Technologies</h2>
         <p>

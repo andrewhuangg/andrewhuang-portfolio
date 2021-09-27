@@ -4,6 +4,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @include breakpoint-down(smedium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-down(small) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__tech-container {
@@ -14,6 +22,10 @@
     align-items: center;
     background-color: $blockLight;
     border: 1px solid rgba(187, 191, 202, 0.05);
+
+    @include breakpoint-down(smedium) {
+      padding: 25px 20px;
+    }
 
     img {
       max-width: 75px;

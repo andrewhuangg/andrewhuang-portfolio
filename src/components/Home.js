@@ -6,15 +6,15 @@ import Projects from './Projects';
 import Social from './Social';
 import Contact from './Contact';
 
-const Home = ({ isToggled, setIsToggled }) => {
+const Home = ({ isToggled, refProp }) => {
   return (
-    <div className={`home ${isToggled && 'home--active'}`} id='home'>
-      <Hero />
-      <About />
-      <Technologies />
-      <Projects />
-      <Social />
-      <Contact />
+    <div className={`home ${isToggled && 'home--active'}`} id='home' ref={refProp}>
+      <Hero refProp={refProp} />
+      <About refProp={refProp} />
+      <Technologies refProp={refProp} />
+      <Projects refProp={refProp} />
+      <Social refProp={refProp} />
+      <Contact refProp={refProp} />
     </div>
   );
 };
