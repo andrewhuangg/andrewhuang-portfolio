@@ -6,8 +6,8 @@
   transition: width 200ms ease-in-out, left 200ms ease-in-out;
 
   &--active {
-    width: calc(100% - 225px); // * Calculating sidebar width
-    left: 225px;
+    width: calc(100% - 250px); // * Calculating sidebar width
+    left: 250px;
 
     @include breakpoint-down(smedium) {
       width: calc(100% - 300px);
@@ -17,5 +17,11 @@
     @include breakpoint-down(small) {
       left: 100%;
     }
+  }
+}
+
+.dark {
+  .home {
+    background-color: $secondaryDark;
   }
 }

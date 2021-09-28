@@ -4,7 +4,7 @@
   padding: 0 40px;
   top: 0;
   left: 0px;
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,16 +14,12 @@
   transition: width 200ms ease-in-out, left 200ms ease-in-out;
 
   &--active {
-    width: calc(100% - 225px); // * Calculating sidebar width
-    left: 225px;
+    width: calc(100% - 250px); // * Calculating sidebar width
+    left: 250px;
 
     @include breakpoint-down(smedium) {
-      width: calc(100% - 300px);
-      left: 300px;
-    }
-
-    @include breakpoint-down(small) {
-      left: 100%;
+      width: 100%;
+      left: 0;
     }
   }
 
@@ -49,6 +45,23 @@
     i {
       color: $buttonLight;
       cursor: pointer;
+    }
+  }
+}
+
+.dark {
+  .navbar {
+    background-color: $mainDark;
+    border-bottom: 1px solid $secondaryDark;
+
+    &__logo {
+      color: $fontHeadingDark;
+    }
+
+    &__toggle {
+      i {
+        color: $buttonDark;
+      }
     }
   }
 }

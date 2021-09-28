@@ -19,6 +19,7 @@
     height: 300px;
     position: relative;
     overflow: hidden;
+    background-color: $blockLight;
 
     &:hover {
       .projects__img-container {
@@ -68,6 +69,22 @@
     h3 {
       color: $fontLight;
       font-size: $fontMd;
+    }
+  }
+}
+
+.dark {
+  .projects {
+    &__proj-container {
+      background-color: $blockDark;
+    }
+
+    &__text {
+      background-color: $mainDark;
+
+      h3 {
+        color: $mainLight;
+      }
     }
   }
 }

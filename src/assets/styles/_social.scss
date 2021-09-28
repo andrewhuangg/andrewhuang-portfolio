@@ -1,7 +1,4 @@
 .social {
-  &__title {
-  }
-
   &__content {
     margin: 40px;
     display: grid;
@@ -72,6 +69,43 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+.dark {
+  .social {
+    &__social-container {
+      background-color: $blockDark;
+
+      h4 {
+        color: $fontDark;
+        border-right: 4px solid $buttonDark;
+      }
+
+      h4:hover {
+        border-right: 0px solid $buttonDark;
+      }
+
+      h4::after {
+        background-color: $buttonDark;
+      }
+    }
+
+    &__icon-container {
+      margin-right: 16px;
+      height: 50px;
+      width: 50px;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

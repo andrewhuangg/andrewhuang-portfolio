@@ -61,3 +61,12 @@
     width: 100%;
   }
 }
+
+.dark {
+  .about {
+    background-color: $secondaryDark;
+    &__text {
+      color: $fontDark;
+    }
+  }
+}

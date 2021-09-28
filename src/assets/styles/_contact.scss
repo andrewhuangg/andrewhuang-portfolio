@@ -90,3 +90,52 @@
     }
   }
 }
+
+.dark {
+  .contact {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+
+    &__title {
+    }
+
+    &__form {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 700px;
+      position: relative;
+    }
+
+    &__form-group {
+      &.group1 {
+        input {
+          color: $fontDark;
+          background-color: $blockDark;
+
+          &::placeholder {
+            color: $fontHeadingDark;
+          }
+        }
+      }
+
+      &.group2 {
+        textarea {
+          color: $fontDark;
+          background-color: $blockDark;
+
+          &::placeholder {
+            color: $fontHeadingDark;
+          }
+        }
+
+        input {
+          color: $fontDark;
+          background-color: $buttonDark;
+        }
+      }
+    }
+  }
+}

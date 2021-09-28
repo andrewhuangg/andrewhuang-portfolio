@@ -28,6 +28,7 @@
     }
 
     img {
+      width: 75px;
       max-width: 75px;
     }
 
@@ -44,6 +45,22 @@
     p {
       color: $fontLight;
       text-align: center;
+    }
+  }
+}
+
+.dark {
+  .technologies {
+    &__tech-container {
+      background-color: $blockDark;
+
+      h2 {
+        color: $fontHeadingDark;
+      }
+
+      p {
+        color: $fontDark;
+      }
     }
   }
 }

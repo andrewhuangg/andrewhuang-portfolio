@@ -85,3 +85,26 @@ li {
     width: 100%;
   }
 }
+
+.dark {
+  a,
+  a:visited,
+  a:hover {
+    color: $fontDark;
+  }
+  .adjust {
+    background-color: $secondaryDark;
+  }
+
+  .title {
+    color: $fontHeadingDark;
+
+    h2::after {
+      background-color: $buttonDark;
+    }
+
+    p {
+      color: $fontDark;
+    }
+  }
+}

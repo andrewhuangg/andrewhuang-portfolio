@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sidebar = ({ isToggled, setIsToggled, toggleRef }) => {
+const Sidebar = ({ isToggled, setIsToggled, toggleRef, handleDarkMode }) => {
   const handleToggle = (e) => {
     setIsToggled(() => false);
   };
@@ -86,6 +86,7 @@ const Sidebar = ({ isToggled, setIsToggled, toggleRef }) => {
             </a> */}
           </li>
         </ul>
+        <div className='sidebar__lightdarktoggle' onClick={(e) => handleDarkMode(e)} />
       </div>
     </div>
   );

@@ -140,3 +140,23 @@
     }
   }
 }
+
+.dark {
+  .hero {
+    &__about {
+      color: $mainDark;
+    }
+
+    &__title,
+    &__subtitle {
+      color: $fontHeadingDark;
+    }
+
+    &__cta {
+      a {
+        color: $fontDark;
+        background-color: $buttonDark;
+      }
+    }
+  }
+}
